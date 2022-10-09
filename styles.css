@@ -3,31 +3,42 @@ body {
     font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
     background-color: #F5F5DC; /* beige */
     color: #191970; /* midnight */
-}
-
-/* The Richard A. Eisenberg */
-#banner {
-    text-align: right;
-    font-size: x-large;
-}
-
-#wholepage {
     width: 600px;
     margin: 0 auto;
 }
-
-.hr {
-    margin-bottom: 5px;
-    background-color: #191970;
-    height: 1px;
-}
-
-#navbar {
+	
+nav {
+    width: 500px;
+    padding-bottom: 5px; 
+    border-bottom: 5px solid #191970; 
+    margin-bottom: 2px;
+    line-height: 10px; 
+    font-size: 1em; 
+    font-family: sans-serif; 
+    color: white; 
+    margin: 3; 
+    padding-top: 12px;
+    padding-left: 30px;
     text-align: center;
-    margin-bottom: 5px;
 }
 
-#navbar a {
+h1 {
+    font-size: 2em; 
+    font-family: sans-serif; 
+}
+
+#google_translate_element {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+p {
+    margin: 10px auto;
+    margin-left: 5px;
+}
+
+nav a {
     margin: 0px 15px;
     text-decoration: none;
 }
@@ -76,11 +87,6 @@ a:hover {
     font-weight: bold;
 }
 
-p {
-    margin: 10px auto;
-    margin-left: 5px;
-}
-
 td.inst {
     width: 300px;
     padding-bottom: 10px;
@@ -88,14 +94,6 @@ td.inst {
 
 .instname {
     font-weight: bold;
-}
-
-table#education {
-    margin-left: 5px;
-}
-
-table#education td {
-    vertical-align: top;
 }
 
 .magna {
@@ -121,8 +119,4 @@ dt {
 
 li {
     margin-bottom: 5px;
-}
-
-.selflink {
-    text-decoration: none currentcolor solid;
 }
