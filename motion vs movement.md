@@ -32,7 +32,7 @@ We could take a look at the specific definitions found in Oxford Learner's Dicti
     - There was a sudden movement in the undergrowth.
     - The dance combined colour, movement and music.
 
-In several contexts of classical guitar technique, we could see how Aaron Schearer uses the word movement:
+In several contexts of classical guitar technique, we could see how Aaron Schearer[^3] uses the word movement:
 
 About speed:
 
@@ -56,9 +56,10 @@ And here, the contexts where the word motion is used by the same author:
 
 ##### Summary
 
-We can realize the word "motion" is less used in this particular book, and generally describes the physical properties of moving[^3]. 
+We can realize the word "motion" is less used in this particular book, and generally describes the physical properties of moving[^4]. 
 
 [^1]: [motion_1 noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com](https://www.oxfordlearnersdictionaries.com/definition/english/motion_1#motion_idmgs_1)
 [^2]: [movement noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com](https://www.oxfordlearnersdictionaries.com/definition/english/movement?q=movement)
-[^3]: [Difference between Movement and Motion](https://www.ukentry.com/difference-between-movement-and-motion.html)
+[^3]: Aaron Schearer. (1990). "*Aaron Schearer Learning the Classic Guitar Part 1*".
+[^4]: [Difference between Movement and Motion](https://www.ukentry.com/difference-between-movement-and-motion.html)
 
