@@ -5,6 +5,7 @@ theme = "hugo-book"
 [params]
   BookSection = "docs"
   BookCollapseSection = true
+  BookToc = true
 
 [markup]
   [markup.goldmark]
@@ -16,4 +17,4 @@ theme = "hugo-book"
         enable = true
         [markup.goldmark.extensions.passthrough.delimiters]
           inline = [['$', '$']]
-          block = [['35898', '35898']]
+          block = [['$$', '$$']]

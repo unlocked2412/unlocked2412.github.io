@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Database Systems Ii on The Engineer&#39;s Lair</title>
+    <link>http://localhost:1313/docs/engineering/third-year/database-systems-ii/</link>
+    <description>Recent content in Database Systems Ii on The Engineer&#39;s Lair</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/docs/engineering/third-year/database-systems-ii/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction</title>
+      <link>http://localhost:1313/docs/engineering/third-year/database-systems-ii/intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/engineering/third-year/database-systems-ii/intro/</guid>
+      <description>&lt;p&gt;This is your Database Systems II section.&lt;/p&gt;&#xA;&lt;p&gt;Inline math: ^2 + b^2 = c^2$&lt;/p&gt;&#xA;&lt;p&gt;35898&#xA;\sum_{i=1}^{n} i = \frac{n(n+1)}{2}&#xA;35898&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
