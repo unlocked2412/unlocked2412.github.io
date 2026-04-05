@@ -1,0 +1,19 @@
+baseURL = "https://engineerlair.github.io/"
+title = "The Engineer's Lair"
+theme = "hugo-book"
+
+[params]
+  BookSection = "docs"
+  BookCollapseSection = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          inline = [['$', '$']]
+          block = [['35898', '35898']]
