@@ -58,4 +58,20 @@ We distinguished the schema, or description of a database, from the database its
 
 Wat !
 
-![Wat is this !](/docs/engineering/third-year/database-systems-ii/books/fundamentals-of-database-systems/assets/wat.jpg)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Test</title>
+</head>
+<body>
+
+    <h1>Test Image</h1>
+
+    <img src="wat.jpg" 
+         alt="wat image"
+         style="max-width: 100%; height: auto;">
+
+</body>
+</html>
