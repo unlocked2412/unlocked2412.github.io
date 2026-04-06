@@ -7,5 +7,12 @@
     <generator>Hugo</generator>
     <language>en</language>
     <atom:link href="http://localhost:1313/docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/docs/engineering/third-year/database-systems-ii/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/engineering/third-year/database-systems-ii/</guid>
+      <description>&lt;h2 id=&#34;_index&#34;&gt;_index&lt;a class=&#34;anchor&#34; href=&#34;#_index&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;title: &amp;ldquo;Database Systems II&amp;rdquo;&#xA;weight: 1&lt;/p&gt;&#xA;&lt;h1 id=&#34;bookflatsection-false&#34;&gt;bookFlatSection: false&lt;a class=&#34;anchor&#34; href=&#34;#bookflatsection-false&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;h1 id=&#34;booktoc-true&#34;&gt;bookToc: true&lt;a class=&#34;anchor&#34; href=&#34;#booktoc-true&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;h1 id=&#34;bookhidden-false&#34;&gt;bookHidden: false&lt;a class=&#34;anchor&#34; href=&#34;#bookhidden-false&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;h1 id=&#34;bookcollapsesection-false&#34;&gt;bookCollapseSection: false&lt;a class=&#34;anchor&#34; href=&#34;#bookcollapsesection-false&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;h1 id=&#34;bookcomments-false&#34;&gt;bookComments: false&lt;a class=&#34;anchor&#34; href=&#34;#bookcomments-false&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;h1 id=&#34;booksearchexclude-false&#34;&gt;bookSearchExclude: false&lt;a class=&#34;anchor&#34; href=&#34;#booksearchexclude-false&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;h1 id=&#34;bookhref-&#34;&gt;bookHref: &#39;&#39;&lt;a class=&#34;anchor&#34; href=&#34;#bookhref-&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;h1 id=&#34;bookicon-&#34;&gt;bookIcon: &#39;&#39;&lt;a class=&#34;anchor&#34; href=&#34;#bookicon-&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;hr&gt;</description>
+    </item>
   </channel>
 </rss>

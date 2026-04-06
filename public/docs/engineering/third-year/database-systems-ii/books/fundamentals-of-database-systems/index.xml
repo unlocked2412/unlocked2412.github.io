@@ -12,14 +12,21 @@
       <link>http://localhost:1313/docs/engineering/third-year/database-systems-ii/books/fundamentals-of-database-systems/chapter-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/docs/engineering/third-year/database-systems-ii/books/fundamentals-of-database-systems/chapter-1/</guid>
-      <description>&lt;h2 id=&#34;chapter-1&#34;&gt;Chapter 1&lt;a class=&#34;anchor&#34; href=&#34;#chapter-1&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;A note about chapter 1&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;chapter-1&#34;&gt;Chapter 1&lt;a class=&#34;anchor&#34; href=&#34;#chapter-1&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;database-systems&#34;&gt;Database systems&lt;a class=&#34;anchor&#34; href=&#34;#database-systems&#34;&gt;#&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Traditional database applications&lt;/strong&gt;: most of the information that is stored and accessed is either textual or numeric.&#xA;&lt;strong&gt;Multimedia databases&lt;/strong&gt;: can store images, audio clips, video streams.&#xA;&lt;strong&gt;Geographic information systems (GISs)&lt;/strong&gt;: can store and analyse maps, weather data and satellite images.&#xA;&lt;strong&gt;Data warehouses&lt;/strong&gt;: are used to extract and analyse useful business information from very large databases to support decision making.&#xA;Database search techniques are being applied to the World Wide Web to improve the search for information that is needed by users browsing the Internet.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
       <link>http://localhost:1313/docs/engineering/third-year/database-systems-ii/books/fundamentals-of-database-systems/chapter-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/docs/engineering/third-year/database-systems-ii/books/fundamentals-of-database-systems/chapter-2/</guid>
-      <description>&lt;h2 id=&#34;chapter-2&#34;&gt;Chapter 2&lt;a class=&#34;anchor&#34; href=&#34;#chapter-2&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;A note about chapter 2&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;chapter-2&#34;&gt;Chapter 2&lt;a class=&#34;anchor&#34; href=&#34;#chapter-2&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;categories-of-data-models&#34;&gt;Categories of Data Models&lt;a class=&#34;anchor&#34; href=&#34;#categories-of-data-models&#34;&gt;#&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;p&gt;An &lt;strong&gt;entity&lt;/strong&gt; represents a real-world object or concept, such as an employee  or a project from the mini world that is described in the database.&lt;/p&gt;&#xA;&lt;p&gt;An &lt;strong&gt;attribute&lt;/strong&gt; represents some property of interest that further describes an entity, such as the employee&amp;rsquo;s name or salary.&lt;/p&gt;&#xA;&lt;p&gt;A &lt;strong&gt;relationship&lt;/strong&gt; among two or more entities represents an association among the entities, for example, a works-on relationship between an employee and a project.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/docs/engineering/third-year/database-systems-ii/books/fundamentals-of-database-systems/chapter-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/engineering/third-year/database-systems-ii/books/fundamentals-of-database-systems/chapter-3/</guid>
+      <description>&lt;h2 id=&#34;chapter-3&#34;&gt;Chapter 3&lt;a class=&#34;anchor&#34; href=&#34;#chapter-3&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;</description>
     </item>
   </channel>
 </rss>

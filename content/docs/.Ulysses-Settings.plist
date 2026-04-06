@@ -9,6 +9,6 @@
 	<key>sheetFormat</key>
 	<string>foreign</string>
 	<key>useInlineLinks</key>
-	<false/>
+	<true/>
 </dict>
 </plist>

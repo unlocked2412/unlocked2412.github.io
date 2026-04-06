@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Database systems# Traditional database applications: most of the information that is stored and accessed is either textual or numeric. Multimedia databases: can store images, audio clips, video streams. Geographic information systems (GISs): can store and analyse maps, weather data and satellite images. Data warehouses: are used to extract and analyse useful business information from very large databases to support decision making. Database search techniques are being applied to the World Wide Web to improve the search for information that is needed by users browsing the Internet.
+">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2e3440">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/engineering/third-year/database-systems-ii/books/fundamentals-of-database-systems/chapter.textbundle/text/">
+  <meta property="og:site_name" content="The Engineer&#39;s Lair">
+  <meta property="og:title" content="The Engineer&#39;s Lair">
+  <meta property="og:description" content="Database systems# Traditional database applications: most of the information that is stored and accessed is either textual or numeric. Multimedia databases: can store images, audio clips, video streams. Geographic information systems (GISs): can store and analyse maps, weather data and satellite images. Data warehouses: are used to extract and analyse useful business information from very large databases to support decision making. Database search techniques are being applied to the World Wide Web to improve the search for information that is needed by users browsing the Internet.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+
+
+  <meta itemprop="name" content="The Engineer&#39;s Lair">
+  <meta itemprop="description" content="Database systems# Traditional database applications: most of the information that is stored and accessed is either textual or numeric. Multimedia databases: can store images, audio clips, video streams. Geographic information systems (GISs): can store and analyse maps, weather data and satellite images. Data warehouses: are used to extract and analyse useful business information from very large databases to support decision making. Database search techniques are being applied to the World Wide Web to improve the search for information that is needed by users browsing the Internet.">
+  <meta itemprop="wordCount" content="1227">
+
+<title>Text | The Engineer&#39;s Lair</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/docs/engineering/third-year/database-systems-ii/books/fundamentals-of-database-systems/chapter.textbundle/text/">
+<link rel="stylesheet" href="/book.min.4d6d5ad3b0ae85d2a15b20ab217863f70db543e46314629e239ced759e674898.css" integrity="sha256-TW1a07CuhdKhWyCrIXhj9w21Q&#43;RjFGKeI5ztdZ5nSJg=" crossorigin="anonymous">
+
+
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.8acd85a5be622fef2375e5afa1a12194f5c8d04be0c211b002556bd8e4ce7da8.js" integrity="sha256-is2Fpb5iL&#43;8jdeWvoaEhlPXI0EvgwhGwAlVr2OTOfag=" crossorigin="anonymous"></script>
+
+
+
+  <script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$']],
+    displayMath: [['$$', '$$']]
+  }
+};
+</script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body dir="ltr" class="book-kind-page book-type-docs">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>The Engineer&#39;s Lair</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input id="book-search-input" type="text" 
+    placeholder="Search"
+    aria-label="Search"
+    maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a>
+      Engineering</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a>
+      Third Year</a>
+  
+
+          
+  <ul>
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/engineering/third-year/database-systems-ii/books/fundamentals-of-database-systems/_index.textbundle/text/" class="">
+      Fundamentals of Database Systems</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/engineering/third-year/database-systems-ii/books/fundamentals-of-database-systems/chapter-2.textbundle/text/" class="">
+      Text</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/engineering/third-year/database-systems-ii/books/fundamentals-of-database-systems/chapter.textbundle/text/" class="active">
+      Text</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/engineering/third-year/database-systems-ii/intro.textbundle/text/" class="">
+      Text</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header hidden">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/icons/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Text</h3>
+
+  <label for="toc-control">
+    
+    <img src="/icons/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#database-systems">Database systems</a></li>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#example">Example</a></li>
+        <li><a href="#characteristics-of-the-database-approach">Characteristics of the Database Approach</a></li>
+        <li><a href="#actors-on-the-scene">Actors on the scene</a></li>
+        <li><a href="#advantages-of-using-the-dbms-approach">Advantages of Using the DBMS Approach</a></li>
+        <li><a href="#a-brief-history-of-database-applications">A Brief History of Database Applications</a></li>
+        <li><a href="#when-not-to-use-a-dbms">When Not to Use a DBMS</a></li>
+        <li><a href="#summary">Summary</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h3 id="database-systems">Database systems<a class="anchor" href="#database-systems">#</a></h3>
+<p><strong>Traditional database applications</strong>: most of the information that is stored and accessed is either textual or numeric.
+<strong>Multimedia databases</strong>: can store images, audio clips, video streams.
+<strong>Geographic information systems (GISs)</strong>: can store and analyse maps, weather data and satellite images.
+<strong>Data warehouses</strong>: are used to extract and analyse useful business information from very large databases to support decision making.
+Database search techniques are being applied to the World Wide Web to improve the search for information that is needed by users browsing the Internet.</p>
+<h3 id="introduction">Introduction<a class="anchor" href="#introduction">#</a></h3>
+<p>A <strong>database</strong> is a collection of related data. By <strong>data</strong>, we mean known facts that can be recorded and that have implicit meaning.</p>
+<p>A database has the following implicit properties</p>
+<ul>
+<li>A database represents some aspect of the real world, sometimes called the <strong>universe of discourse</strong>.</li>
+<li>A database is a logically coherent collection of data with some inherent me. A random assortment of data cannot correctly be referred to as a database.</li>
+<li>A database is designed, built, and populated with data for a specific purpose. It has an intended group of users and some preconceived applications in which these users are interested.</li>
+</ul>
+<p>A <strong>database management system DBMS</strong> is a computerised system that enables users to create and maintain a database. <strong>Defining</strong> a database involves specifying the data types, structures, and constraints of the data to be stored in the database. <strong>Constructing</strong> the database is the process of storing the daytime storage medium that is controlled by the DBMS. <strong>Manipulating</strong> a database includes functions such as querying the database to retrieve specific data, updating the database to reflect changes in the mini world, and generating reports from the data. <strong>Sharing</strong> a data database allows multiple users and programs to access the database simultaneously.</p>
+<p>An <strong>application program</strong> accesses the database by sending queries or requests for data to the DBMS. A <strong>query<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></strong> typically causes some data to be retrieved; a <strong>transaction</strong> may cause some data to be read and some data to be written into the database.</p>
+<p><strong>Protection</strong> includes system protection against hardware or software malfunction security protection against unauthorised or malicious access. A typical large database may have a life cycle of many years, so the DBMS must be able to <strong>maintain</strong> the database system by allowing the system to evolve as require requirements change over time.</p>
+<p>To complete our initial definitions, we will call the database and DBS software together a <strong>database system</strong>.</p>
+<h3 id="example">Example<a class="anchor" href="#example">#</a></h3>
+<p>Under construction</p>
+<h3 id="characteristics-of-the-database-approach">Characteristics of the Database Approach<a class="anchor" href="#characteristics-of-the-database-approach">#</a></h3>
+<p>A single repository maintains data that is defined once and then accessed by various users repeatedly through queries, transactions, and application programs.</p>
+<h4 id="self-describing-nature-of-a-database-system">Self-Describing Nature of a Database System<a class="anchor" href="#self-describing-nature-of-a-database-system">#</a></h4>
+<p>In this approach, the database system contains not only the database itself, but also a complete definition of description of the database structure and constraints.  This definition is stored in the DBMS catalogue, which contains information such as the structure of each file, the type in storage format of each data item, various constraints on the data. Information stored in the catalogue is called <strong>meta-data</strong>, I need describes the structure of the primary database. DBMS software can access diverse databases by extracting the database definitions from the cat and using these definitions.</p>
+<h4 id="insulation-between-programs-and-data-and-data-abstraction">Insulation between Programs and Data, and Data Abstraction<a class="anchor" href="#insulation-between-programs-and-data-and-data-abstraction">#</a></h4>
+<p>The structure of data files is stored in the DBMS catalogue separately from the access programs. We called this property ** program-data independence**.</p>
+<p>An <strong>operation</strong>is specified in two parts:</p>
+<ul>
+<li><em>interface</em>: includes the operation name and the date types of its arguments.</li>
+<li><em>implementation</em> : is specified separately and can be changed without affecting the interface.
+This may be term <strong>program-operation independence</strong>.</li>
+</ul>
+<p>The characteristic that allows program – data independence and program operation independence is called <strong>data abstraction</strong>. A DBMS provides users with a <strong>conceptual representation</strong> of data that does not include many of the details of how did they die stored or how the operations are implemented. Informally, a <strong>data model</strong> is a type of data abstraction that is used to provide this conceptual representation.</p>
+<h4 id="support-of-multiple-views-of-the-data">Support of Multiple Views of the Data<a class="anchor" href="#support-of-multiple-views-of-the-data">#</a></h4>
+<p>A database typically has many types of users, each of whom may require a different perspective or <strong>view</strong> of the database. A view may be a subset of the database or it may contain <strong>virtual data</strong> that is derived from the database files, but this is not explicitly stored.</p>
+<h4 id="sharing-of-data-and-multiuser-transaction-processing">Sharing of Data and Multiuser Transaction Processing<a class="anchor" href="#sharing-of-data-and-multiuser-transaction-processing">#</a></h4>
+<p>The DBMS must include <strong>concurrency control</strong> software to ensure that several users trying to update the same data do so in a controlled manner so that the result of the update is correct.
+A <strong>transaction</strong> is an executing program or process that includes one or more database accesses, such as reading or updating of database records. The <strong>isolation</strong> property and shares that each transaction appears to execute in isolation from other transactions, even though hundred often transactions may be executing concurrently. The <strong>atomicity</strong> property and shares that either all the database operations in a transaction are executed or none are.</p>
+<h3 id="actors-on-the-scene">Actors on the scene<a class="anchor" href="#actors-on-the-scene">#</a></h3>
+<ul>
+<li>Database Administrators</li>
+<li>Database Designers</li>
+<li>End Users</li>
+<li>System Analysts and Application Programmers (Software Engineers)</li>
+</ul>
+<h4 id="workers-behind-the-scene">Workers behind the Scene<a class="anchor" href="#workers-behind-the-scene">#</a></h4>
+<ul>
+<li>DBMS system designers and implementers</li>
+<li>Tool developers</li>
+<li>Operators and maintenance personnel</li>
+</ul>
+<h3 id="advantages-of-using-the-dbms-approach">Advantages of Using the DBMS Approach<a class="anchor" href="#advantages-of-using-the-dbms-approach">#</a></h3>
+<ul>
+<li>Controlling Redundancy</li>
+<li>Restricting Unauthorised Access</li>
+<li>providing persistence storage for program objects</li>
+<li>providing storage structures and search techniques for efficient query processing</li>
+<li>providing back up and recovery</li>
+<li>providing multiple user interfaces</li>
+<li>representing complex relationships among data</li>
+<li>enforcing integrity constraints</li>
+<li>permitting inferencing and actions using rules and triggers</li>
+<li>Additional implications of using the Database Approach
+<ul>
+<li>potential for enforcing standards</li>
+<li>reduced application development time</li>
+<li>flexibility</li>
+<li>availability of up-to-date information</li>
+<li>economies of scale</li>
+</ul>
+</li>
+</ul>
+<h3 id="a-brief-history-of-database-applications">A Brief History of Database Applications<a class="anchor" href="#a-brief-history-of-database-applications">#</a></h3>
+<p>Under construction</p>
+<h3 id="when-not-to-use-a-dbms">When Not to Use a DBMS<a class="anchor" href="#when-not-to-use-a-dbms">#</a></h3>
+<p>The overhead costs of using a DBMS are due to the following:</p>
+<ul>
+<li>High initial investment in hardware, software, and training.</li>
+<li>the generality that DBMS provides for the finding and processing data</li>
+<li>overhead for providing security, concurrency control, recovery, and integrity functions.</li>
+</ul>
+<h3 id="summary">Summary<a class="anchor" href="#summary">#</a></h3>
+<p>In this chapter we defined a database as a collection of related data, where data means recorded facts. A typical database represents some aspect of the real world and is used for specific purposes by one or more groups of users. A DBMS is a generalized software package for implementing and maintaining a computerized database. The database and software together form a database system. We identified several characteristics that distinguish the database approach from traditional file-processing applications, and we discussed the main categories of database users, or the actors on the scene. We noted that in addition to database users, there are several categories of support personnel, or workers behind the scene, in a database environment.
+We presented a list of capabilities that should be provided by the DBMS software to the DBA, database designers, and end users to help them design, administer, and use a database. Then we gave a brief historical perspective on the evolution of database applications. We pointed out the recent rapid growth of the amounts and types of data that must be stored in databases, and we discussed the emergence of new systems for handling “big data” applications. Finally, we discussed the overhead costs of using a DBMS and discussed some situations in which it may not be advantageous to use one.</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>The term <em>query</em>, originally meaning a question or an inquiry, is sometimes loosely used for all types of interactions with databases, including modifying the data.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+<div>
+
+</div>
+
+<div>
+
+</div>
+
+</div>
+
+
+
+
+
+  
+  
+  
+  <div class="flex flex-wrap justify-between">
+    <span>
+    
+      <a href="/docs/engineering/third-year/database-systems-ii/books/fundamentals-of-database-systems/chapter-2.textbundle/text/" class="flex align-center">
+        <img src="/icons/backward.svg" class="book-icon" alt="Backward" />
+        <span>Text</span>
+      </a>
+    
+    </span>
+    <span>
+    
+      <a href="/docs/engineering/third-year/database-systems-ii/intro.textbundle/text/" class="flex align-center">
+        <span>Text</span>
+        <img src="/icons/forward.svg" class="book-icon" alt="Forward" />
+      </a>
+    
+    </span>
+  </div>
+  
+
+
+ 
+        
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+        
+        
+  
+ 
+        
+  
+  
+    <script>(function(){document.querySelectorAll("pre:has(code)").forEach(e=>{e.addEventListener("click",e.focus),e.addEventListener("copy",function(t){if(t.preventDefault(),navigator.clipboard){const t=window.getSelection().toString()||e.textContent;navigator.clipboard.writeText(t)}})})})()</script>
+  
+
+      </footer>
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  
+  <aside class="book-toc">
+    <div class="book-toc-content">
+      
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#database-systems">Database systems</a></li>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#example">Example</a></li>
+        <li><a href="#characteristics-of-the-database-approach">Characteristics of the Database Approach</a></li>
+        <li><a href="#actors-on-the-scene">Actors on the scene</a></li>
+        <li><a href="#advantages-of-using-the-dbms-approach">Advantages of Using the DBMS Approach</a></li>
+        <li><a href="#a-brief-history-of-database-applications">A Brief History of Database Applications</a></li>
+        <li><a href="#when-not-to-use-a-dbms">When Not to Use a DBMS</a></li>
+        <li><a href="#summary">Summary</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+    </div>
+  </aside>
+  
+ 
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

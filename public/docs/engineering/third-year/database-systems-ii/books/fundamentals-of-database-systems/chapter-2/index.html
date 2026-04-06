@@ -8,22 +8,28 @@ https://github.com/alex-shpak/hugo-book
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Chapter 2# A note about chapter 2
+<meta name="description" content="Chapter 2# Categories of Data Models# An entity represents a real-world object or concept, such as an employee or a project from the mini world that is described in the database.
+An attribute represents some property of interest that further describes an entity, such as the employee’s name or salary.
+A relationship among two or more entities represents an association among the entities, for example, a works-on relationship between an employee and a project.
 ">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2e3440">
 <meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/engineering/third-year/database-systems-ii/books/fundamentals-of-database-systems/chapter-2/">
   <meta property="og:site_name" content="The Engineer&#39;s Lair">
   <meta property="og:title" content="The Engineer&#39;s Lair">
-  <meta property="og:description" content="Chapter 2# A note about chapter 2">
+  <meta property="og:description" content="Chapter 2# Categories of Data Models# An entity represents a real-world object or concept, such as an employee or a project from the mini world that is described in the database.
+An attribute represents some property of interest that further describes an entity, such as the employee’s name or salary.
+A relationship among two or more entities represents an association among the entities, for example, a works-on relationship between an employee and a project.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
 
 
   <meta itemprop="name" content="The Engineer&#39;s Lair">
-  <meta itemprop="description" content="Chapter 2# A note about chapter 2">
-  <meta itemprop="wordCount" content="7">
+  <meta itemprop="description" content="Chapter 2# Categories of Data Models# An entity represents a real-world object or concept, such as an employee or a project from the mini world that is described in the database.
+An attribute represents some property of interest that further describes an entity, such as the employee’s name or salary.
+A relationship among two or more entities represents an association among the entities, for example, a works-on relationship between an employee and a project.">
+  <meta itemprop="wordCount" content="516">
 
 <title>Chapter 2 | The Engineer&#39;s Lair</title>
 <link rel="icon" href="/favicon.png" >
@@ -33,7 +39,7 @@ https://github.com/alex-shpak/hugo-book
 
 
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/en.search.min.9d78b324766c4bc0d870527f1f60d162bdedbbd31ba3cdc9b4d1c5037d139b07.js" integrity="sha256-nXizJHZsS8DYcFJ/H2DRYr3tu9Mbo83JtNHFA30Tmwc=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.1cd1743d218dc46e359634002efcfc27308a679437f07e9dec533bf248ad0b5d.js" integrity="sha256-HNF0PSGNxG41ljQALvz8JzCKZ5Q38H6d7FM78kitC10=" crossorigin="anonymous"></script>
 
 
 
@@ -96,34 +102,6 @@ window.MathJax = {
 
   
     <a>
-      Engineering</a>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a>
-      Third Year</a>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a>
       Database Systems II</a>
   
 
@@ -172,6 +150,20 @@ window.MathJax = {
         </li>
       
     
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/engineering/third-year/database-systems-ii/books/fundamentals-of-database-systems/chapter-3/" class="">
+      Chapter 3</a>
+  
+
+        </li>
+      
+    
   </ul>
 
         </li>
@@ -185,18 +177,8 @@ window.MathJax = {
 
   
     <a href="/docs/engineering/third-year/database-systems-ii/intro/" class="">
-      Introduction</a>
+      Intro</a>
   
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-  </ul>
 
         </li>
       
@@ -257,7 +239,17 @@ window.MathJax = {
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#chapter-2">Chapter 2</a></li>
+    <li><a href="#chapter-2">Chapter 2</a>
+      <ul>
+        <li><a href="#categories-of-data-models">Categories of Data Models</a></li>
+        <li><a href="#schemas-instances-and-database-state">Schemas, Instances, and Database State</a></li>
+        <li><a href="#three-schema-architecture-and-data-independence">Three-Schema Architecture and Data Independence</a></li>
+        <li><a href="#data-independence">Data Independence</a></li>
+        <li><a href="#database-languages-and-interfaces">Database Languages and Interfaces</a></li>
+        <li><a href="#centralised-and-clientserver-architectures-fro-dbmss">Centralised and Client/Server Architectures fro DBMSs</a></li>
+        <li><a href="#summary">Summary</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -271,7 +263,52 @@ window.MathJax = {
       
       
   <article class="markdown book-article"><h2 id="chapter-2">Chapter 2<a class="anchor" href="#chapter-2">#</a></h2>
-<p>A note about chapter 2</p>
+<h3 id="categories-of-data-models">Categories of Data Models<a class="anchor" href="#categories-of-data-models">#</a></h3>
+<p>An <strong>entity</strong> represents a real-world object or concept, such as an employee  or a project from the mini world that is described in the database.</p>
+<p>An <strong>attribute</strong> represents some property of interest that further describes an entity, such as the employee&rsquo;s name or salary.</p>
+<p>A <strong>relationship</strong> among two or more entities represents an association among the entities, for example, a works-on relationship between an employee and a project.</p>
+<h3 id="schemas-instances-and-database-state">Schemas, Instances, and Database State<a class="anchor" href="#schemas-instances-and-database-state">#</a></h3>
+<p>In a data model, it is important to distinguish between the description of the database and the database in itself. The description of the database is called the <strong>database schema</strong>.
+The actual data in a database may change quite frequently. The data in the database at a particular moment in time is called <strong>database state</strong> or <strong>snapshot</strong>.</p>
+<h3 id="three-schema-architecture-and-data-independence">Three-Schema Architecture and Data Independence<a class="anchor" href="#three-schema-architecture-and-data-independence">#</a></h3>
+<h4 id="the-three-schema-architecture">The Three-Schema Architecture<a class="anchor" href="#the-three-schema-architecture">#</a></h4>
+<p>The goal of the three-schema architecture, illustrated in Figure 2.2, is the separate the user applications from the physical database. In this architecture, skimmer can be defined at the following three levels:</p>
+<ol>
+<li>The internal level has an internal schema, which describes the physical storage structure of the database.</li>
+<li>The conceptual level has a conceptual schema, which describes the structure of the whole database for a community of users.</li>
+<li>The external or view level includes a number of external schemas or user views.</li>
+</ol>
+<h3 id="data-independence">Data Independence<a class="anchor" href="#data-independence">#</a></h3>
+<p>We can define two types of data independence:</p>
+<ol>
+<li>Logical data independence is the capacity to change the conceptual schema without having to change external scheme mask or application programs.</li>
+<li>Physical data independence is the capacity to change the internal schema without having to change the conceptual schema.</li>
+</ol>
+<h3 id="database-languages-and-interfaces">Database Languages and Interfaces<a class="anchor" href="#database-languages-and-interfaces">#</a></h3>
+<h4 id="dbms-languages">DBMS Languages<a class="anchor" href="#dbms-languages">#</a></h4>
+<ul>
+<li>data definition language</li>
+<li>storage definition language (SDL)</li>
+<li>view definition language</li>
+<li>data manipulation language</li>
+<li>high-level or procedural language</li>
+</ul>
+<h3 id="centralised-and-clientserver-architectures-fro-dbmss">Centralised and Client/Server Architectures fro DBMSs<a class="anchor" href="#centralised-and-clientserver-architectures-fro-dbmss">#</a></h3>
+<h4 id="two-tier-clientserver-architectures-fro-dbmss">Two-Tier Client/Server Architectures fro DBMSs<a class="anchor" href="#two-tier-clientserver-architectures-fro-dbmss">#</a></h4>
+<p>In relational database management systems (RDBMSs), many of which started as centralised systems, the system compliments that were first moved to the client side where the user interface and application programs. Because SQL provided a standard language for RDBMSs, this created a logical dividing point between clients and server. Hence, the query and transaction functionality related to SQL processing remained on the server site. You&rsquo;re such an architecture, the server is often called query server or transaction server because it provides these two functionalities. In an RDBMS, the server is also often called an <strong>SQL server</strong>.</p>
+<h3 id="summary">Summary<a class="anchor" href="#summary">#</a></h3>
+<p>We find a data model and with distinguish three main categories&gt;</p>
+<ul>
+<li>high-level or conceptual data models (based on entities and relationships)</li>
+<li>low level or physical data models</li>
+<li>representational or implementation data models (record-based, object-oriented)</li>
+</ul>
+<p>We distinguished the schema, or description of a database, from the database itself. The schema does not change very often, whereas the database state changes every time data is inserted, deleted, or modified. Then we described the three-schema DBMS architecture, which allows three schema levels:</p>
+<ul>
+<li>An internal schema describes the physical storage structure of the database.</li>
+<li>A conceptual schema is a high-level description of the whole database.</li>
+<li>External schemas describe the views of different user groups.</li>
+</ul>
 </article>
  
       
@@ -308,8 +345,8 @@ window.MathJax = {
     </span>
     <span>
     
-      <a href="/docs/engineering/third-year/database-systems-ii/intro/" class="flex align-center">
-        <span>Introduction</span>
+      <a href="/docs/engineering/third-year/database-systems-ii/books/fundamentals-of-database-systems/chapter-3/" class="flex align-center">
+        <span>Chapter 3</span>
         <img src="/icons/forward.svg" class="book-icon" alt="Forward" />
       </a>
     
@@ -349,7 +386,17 @@ window.MathJax = {
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#chapter-2">Chapter 2</a></li>
+    <li><a href="#chapter-2">Chapter 2</a>
+      <ul>
+        <li><a href="#categories-of-data-models">Categories of Data Models</a></li>
+        <li><a href="#schemas-instances-and-database-state">Schemas, Instances, and Database State</a></li>
+        <li><a href="#three-schema-architecture-and-data-independence">Three-Schema Architecture and Data Independence</a></li>
+        <li><a href="#data-independence">Data Independence</a></li>
+        <li><a href="#database-languages-and-interfaces">Database Languages and Interfaces</a></li>
+        <li><a href="#centralised-and-clientserver-architectures-fro-dbmss">Centralised and Client/Server Architectures fro DBMSs</a></li>
+        <li><a href="#summary">Summary</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 

@@ -19,7 +19,7 @@ A **database management system DBMS** is a computerised system that enables user
 
 An **application program** accesses the database by sending queries or requests for data to the DBMS. A **query[^1]** typically causes some data to be retrieved; a **transaction** may cause some data to be read and some data to be written into the database.
 
-** Protection** includes system protection against hardware or software malfunction security protection against unauthorised or malicious access. A typical large database may have a life cycle of many years, so the DBMS must be able to **maintain** the database system by allowing the system to evolve as require requirements change over time.
+**Protection** includes system protection against hardware or software malfunction security protection against unauthorised or malicious access. A typical large database may have a life cycle of many years, so the DBMS must be able to **maintain** the database system by allowing the system to evolve as require requirements change over time.
 
 To complete our initial definitions, we will call the database and DBS software together a **database system**.
 
@@ -28,5 +28,74 @@ To complete our initial definitions, we will call the database and DBS software 
 Under construction
 
 ### Characteristics of the Database Approach
+
+A single repository maintains data that is defined once and then accessed by various users repeatedly through queries, transactions, and application programs.
+
+#### Self-Describing Nature of a Database System
+
+In this approach, the database system contains not only the database itself, but also a complete definition of description of the database structure and constraints.  This definition is stored in the DBMS catalogue, which contains information such as the structure of each file, the type in storage format of each data item, various constraints on the data. Information stored in the catalogue is called **meta-data**, I need describes the structure of the primary database. DBMS software can access diverse databases by extracting the database definitions from the cat and using these definitions.
+
+#### Insulation between Programs and Data, and Data Abstraction
+
+The structure of data files is stored in the DBMS catalogue separately from the access programs. We called this property ** program-data independence**.
+
+An **operation**is specified in two parts:
+- _interface_: includes the operation name and the date types of its arguments.
+- _implementation_ : is specified separately and can be changed without affecting the interface.
+This may be term **program-operation independence**.
+
+The characteristic that allows program – data independence and program operation independence is called **data abstraction**. A DBMS provides users with a **conceptual representation** of data that does not include many of the details of how did they die stored or how the operations are implemented. Informally, a **data model** is a type of data abstraction that is used to provide this conceptual representation.
+
+#### Support of Multiple Views of the Data
+A database typically has many types of users, each of whom may require a different perspective or **view** of the database. A view may be a subset of the database or it may contain **virtual data** that is derived from the database files, but this is not explicitly stored.
+
+#### Sharing of Data and Multiuser Transaction Processing
+The DBMS must include **concurrency control** software to ensure that several users trying to update the same data do so in a controlled manner so that the result of the update is correct.
+A **transaction** is an executing program or process that includes one or more database accesses, such as reading or updating of database records. The **isolation** property and shares that each transaction appears to execute in isolation from other transactions, even though hundred often transactions may be executing concurrently. The **atomicity** property and shares that either all the database operations in a transaction are executed or none are.
+
+### Actors on the scene
+
+- Database Administrators
+- Database Designers
+- End Users
+- System Analysts and Application Programmers (Software Engineers)
+
+#### Workers behind the Scene
+- DBMS system designers and implementers
+- Tool developers
+- Operators and maintenance personnel
+### Advantages of Using the DBMS Approach
+
+- Controlling Redundancy
+- Restricting Unauthorised Access
+- providing persistence storage for program objects
+- providing storage structures and search techniques for efficient query processing
+- providing back up and recovery
+- providing multiple user interfaces
+- representing complex relationships among data
+- enforcing integrity constraints
+- permitting inferencing and actions using rules and triggers
+- Additional implications of using the Database Approach
+	- potential for enforcing standards
+	- reduced application development time
+	- flexibility
+	- availability of up-to-date information
+	- economies of scale
+
+### A Brief History of Database Applications
+
+Under construction
+
+### When Not to Use a DBMS
+
+The overhead costs of using a DBMS are due to the following:
+- High initial investment in hardware, software, and training.
+- the generality that DBMS provides for the finding and processing data
+- overhead for providing security, concurrency control, recovery, and integrity functions.
+
+### Summary
+
+In this chapter we defined a database as a collection of related data, where data means recorded facts. A typical database represents some aspect of the real world and is used for specific purposes by one or more groups of users. A DBMS is a generalized software package for implementing and maintaining a computerized database. The database and software together form a database system. We identified several characteristics that distinguish the database approach from traditional file-processing applications, and we discussed the main categories of database users, or the actors on the scene. We noted that in addition to database users, there are several categories of support personnel, or workers behind the scene, in a database environment.
+We presented a list of capabilities that should be provided by the DBMS software to the DBA, database designers, and end users to help them design, administer, and use a database. Then we gave a brief historical perspective on the evolution of database applications. We pointed out the recent rapid growth of the amounts and types of data that must be stored in databases, and we discussed the emergence of new systems for handling “big data” applications. Finally, we discussed the overhead costs of using a DBMS and discussed some situations in which it may not be advantageous to use one.
 
 [^1]:	The term _query_, originally meaning a question or an inquiry, is sometimes loosely used for all types of interactions with databases, including modifying the data.

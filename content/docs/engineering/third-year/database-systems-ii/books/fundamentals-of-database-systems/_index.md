@@ -1,6 +1,6 @@
 ---
 title: "Fundamentals of Database Systems"
-weight: 2
+weight: 1
 ---
 
 Notes and explorations based on the book.

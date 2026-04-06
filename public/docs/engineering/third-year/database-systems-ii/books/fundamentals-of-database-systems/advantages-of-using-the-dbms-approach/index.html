@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Advantages of Using the DBMS Approach# Controlling Redundancy Restricting Unauthorised Access providing persistence storage for program objects providing storage structures and search techniques for efficient query processing providing back up and recovery providing multiple user interfaces representing complex relationships among data enforcing integrity constraints permitting inferencing and actions using rules and triggers Additional implications of using the Database Approach potential for enforcing standards reduced application development time flexibility availability of up-to-date information economies of scale A Brief History of Database Applications# Under construction
+">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2e3440">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/engineering/third-year/database-systems-ii/books/fundamentals-of-database-systems/advantages-of-using-the-dbms-approach/">
+  <meta property="og:site_name" content="The Engineer&#39;s Lair">
+  <meta property="og:title" content="The Engineer&#39;s Lair">
+  <meta property="og:description" content="Advantages of Using the DBMS Approach# Controlling Redundancy Restricting Unauthorised Access providing persistence storage for program objects providing storage structures and search techniques for efficient query processing providing back up and recovery providing multiple user interfaces representing complex relationships among data enforcing integrity constraints permitting inferencing and actions using rules and triggers Additional implications of using the Database Approach potential for enforcing standards reduced application development time flexibility availability of up-to-date information economies of scale A Brief History of Database Applications# Under construction">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+
+
+  <meta itemprop="name" content="The Engineer&#39;s Lair">
+  <meta itemprop="description" content="Advantages of Using the DBMS Approach# Controlling Redundancy Restricting Unauthorised Access providing persistence storage for program objects providing storage structures and search techniques for efficient query processing providing back up and recovery providing multiple user interfaces representing complex relationships among data enforcing integrity constraints permitting inferencing and actions using rules and triggers Additional implications of using the Database Approach potential for enforcing standards reduced application development time flexibility availability of up-to-date information economies of scale A Brief History of Database Applications# Under construction">
+  <meta itemprop="wordCount" content="348">
+
+<title>Advantages of Using the Dbms Approach | The Engineer&#39;s Lair</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/docs/engineering/third-year/database-systems-ii/books/fundamentals-of-database-systems/advantages-of-using-the-dbms-approach/">
+<link rel="stylesheet" href="/book.min.4d6d5ad3b0ae85d2a15b20ab217863f70db543e46314629e239ced759e674898.css" integrity="sha256-TW1a07CuhdKhWyCrIXhj9w21Q&#43;RjFGKeI5ztdZ5nSJg=" crossorigin="anonymous">
+
+
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.02e66a08ac07a04ae75fcec143c8d32fa13b78d1131a7631854ff3276ac41d30.js" integrity="sha256-AuZqCKwHoErnX87BQ8jTL6E7eNETGnYxhU/zJ2rEHTA=" crossorigin="anonymous"></script>
+
+
+
+  <script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$']],
+    displayMath: [['$$', '$$']]
+  }
+};
+</script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body dir="ltr" class="book-kind-page book-type-docs">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>The Engineer&#39;s Lair</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input id="book-search-input" type="text" 
+    placeholder="Search"
+    aria-label="Search"
+    maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a>
+      Engineering</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a>
+      Third Year</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a>
+      Database Systems II</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/engineering/third-year/database-systems-ii/books/fundamentals-of-database-systems/" class="">
+      Fundamentals of Database Systems</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/engineering/third-year/database-systems-ii/books/fundamentals-of-database-systems/advantages-of-using-the-dbms-approach/" class="active">
+      Advantages of Using the Dbms Approach</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/engineering/third-year/database-systems-ii/books/fundamentals-of-database-systems/chapter-1/" class="">
+      Chapter 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/engineering/third-year/database-systems-ii/books/fundamentals-of-database-systems/chapter-2/" class="">
+      Chapter 2</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/engineering/third-year/database-systems-ii/intro/" class="">
+      Introduction</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header hidden">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/icons/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Advantages of Using the Dbms Approach</h3>
+
+  <label for="toc-control">
+    
+    <img src="/icons/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#advantages-of-using-the-dbms-approach">Advantages of Using the DBMS Approach</a></li>
+        <li><a href="#a-brief-history-of-database-applications">A Brief History of Database Applications</a></li>
+        <li><a href="#when-not-to-use-a-dbms">When Not to Use a DBMS</a></li>
+        <li><a href="#summary">Summary</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h3 id="advantages-of-using-the-dbms-approach">Advantages of Using the DBMS Approach<a class="anchor" href="#advantages-of-using-the-dbms-approach">#</a></h3>
+<ul>
+<li>Controlling Redundancy</li>
+<li>Restricting Unauthorised Access</li>
+<li>providing persistence storage for program objects</li>
+<li>providing storage structures and search techniques for efficient query processing</li>
+<li>providing back up and recovery</li>
+<li>providing multiple user interfaces</li>
+<li>representing complex relationships among data</li>
+<li>enforcing integrity constraints</li>
+<li>permitting inferencing and actions using rules and triggers</li>
+<li>Additional implications of using the Database Approach
+<ul>
+<li>potential for enforcing standards</li>
+<li>reduced application development time</li>
+<li>flexibility</li>
+<li>availability of up-to-date information</li>
+<li>economies of scale</li>
+</ul>
+</li>
+</ul>
+<h3 id="a-brief-history-of-database-applications">A Brief History of Database Applications<a class="anchor" href="#a-brief-history-of-database-applications">#</a></h3>
+<p>Under construction</p>
+<h3 id="when-not-to-use-a-dbms">When Not to Use a DBMS<a class="anchor" href="#when-not-to-use-a-dbms">#</a></h3>
+<p>The overhead costs of using a DBMS are due to the following:</p>
+<ul>
+<li>High initial investment in hardware, software, and training.</li>
+<li>the generality that DBMS provides for the finding and processing data</li>
+<li>overhead for providing security, concurrency control, recovery, and integrity functions.</li>
+</ul>
+<h3 id="summary">Summary<a class="anchor" href="#summary">#</a></h3>
+<p>In this chapter we defined a database as a collection of related data, where data means recorded facts. A typical database represents some aspect of the real world and is used for specific purposes by one or more groups of users. A DBMS is a generalized software package for implementing and maintaining a computerized database. The database and software together form a database system. We identified several characteristics that distinguish the database approach from traditional file-processing applications, and we discussed the main categories of database users, or the actors on the scene. We noted that in addition to database users, there are several categories of support personnel, or workers behind the scene, in a database environment.
+We presented a list of capabilities that should be provided by the DBMS software to the DBA, database designers, and end users to help them design, administer, and use a database. Then we gave a brief historical perspective on the evolution of database applications. We pointed out the recent rapid growth of the amounts and types of data that must be stored in databases, and we discussed the emergence of new systems for handling “big data” applications. Finally, we discussed the overhead costs of using a DBMS and discussed some situations in which it may not be advantageous to use one.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+<div>
+
+</div>
+
+<div>
+
+</div>
+
+</div>
+
+
+
+
+
+  
+  
+  
+  <div class="flex flex-wrap justify-between">
+    <span>
+    
+      <a href="/docs/engineering/third-year/database-systems-ii/books/fundamentals-of-database-systems/" class="flex align-center">
+        <img src="/icons/backward.svg" class="book-icon" alt="Backward" />
+        <span>Fundamentals of Database Systems</span>
+      </a>
+    
+    </span>
+    <span>
+    
+      <a href="/docs/engineering/third-year/database-systems-ii/books/fundamentals-of-database-systems/chapter-1/" class="flex align-center">
+        <span>Chapter 1</span>
+        <img src="/icons/forward.svg" class="book-icon" alt="Forward" />
+      </a>
+    
+    </span>
+  </div>
+  
+
+
+ 
+        
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+        
+        
+  
+ 
+        
+  
+  
+    <script>(function(){document.querySelectorAll("pre:has(code)").forEach(e=>{e.addEventListener("click",e.focus),e.addEventListener("copy",function(t){if(t.preventDefault(),navigator.clipboard){const t=window.getSelection().toString()||e.textContent;navigator.clipboard.writeText(t)}})})})()</script>
+  
+
+      </footer>
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  
+  <aside class="book-toc">
+    <div class="book-toc-content">
+      
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#advantages-of-using-the-dbms-approach">Advantages of Using the DBMS Approach</a></li>
+        <li><a href="#a-brief-history-of-database-applications">A Brief History of Database Applications</a></li>
+        <li><a href="#when-not-to-use-a-dbms">When Not to Use a DBMS</a></li>
+        <li><a href="#summary">Summary</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+    </div>
+  </aside>
+  
+ 
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

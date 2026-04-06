@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Chapter 2# Categories of Data Models# An entity represents a real-world object or concept, such as an employee or a project from the mini world that is described in the database.
+An attribute represents some property of interest that further describes an entity, such as the employee’s name or salary.
+A relationship among two or more entities represents an association among the entities, for example, a works-on relationship between an employee and a project.
+">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2e3440">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/engineering/third-year/database-systems-ii/books/fundamentals-of-database-systems/chapter-2.textbundle/text/">
+  <meta property="og:site_name" content="The Engineer&#39;s Lair">
+  <meta property="og:title" content="The Engineer&#39;s Lair">
+  <meta property="og:description" content="Chapter 2# Categories of Data Models# An entity represents a real-world object or concept, such as an employee or a project from the mini world that is described in the database.
+An attribute represents some property of interest that further describes an entity, such as the employee’s name or salary.
+A relationship among two or more entities represents an association among the entities, for example, a works-on relationship between an employee and a project.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+
+
+  <meta itemprop="name" content="The Engineer&#39;s Lair">
+  <meta itemprop="description" content="Chapter 2# Categories of Data Models# An entity represents a real-world object or concept, such as an employee or a project from the mini world that is described in the database.
+An attribute represents some property of interest that further describes an entity, such as the employee’s name or salary.
+A relationship among two or more entities represents an association among the entities, for example, a works-on relationship between an employee and a project.">
+  <meta itemprop="wordCount" content="288">
+
+<title>Text | The Engineer&#39;s Lair</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/docs/engineering/third-year/database-systems-ii/books/fundamentals-of-database-systems/chapter-2.textbundle/text/">
+<link rel="stylesheet" href="/book.min.4d6d5ad3b0ae85d2a15b20ab217863f70db543e46314629e239ced759e674898.css" integrity="sha256-TW1a07CuhdKhWyCrIXhj9w21Q&#43;RjFGKeI5ztdZ5nSJg=" crossorigin="anonymous">
+
+
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.33230f9594f8a5cf1abc03d996f65ef2ec9d29cd378ec7ae8045f2b42767c9b8.js" integrity="sha256-MyMPlZT4pc8avAPZlvZe8uydKc03jseugEXytCdnybg=" crossorigin="anonymous"></script>
+
+
+
+  <script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$']],
+    displayMath: [['$$', '$$']]
+  }
+};
+</script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body dir="ltr" class="book-kind-page book-type-docs">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>The Engineer&#39;s Lair</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input id="book-search-input" type="text" 
+    placeholder="Search"
+    aria-label="Search"
+    maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a>
+      Engineering</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a>
+      Third Year</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/engineering/third-year/database-systems-ii/books/fundamentals-of-database-systems/chapter-1/chapter-1.textbundle/text/" class="">
+      Text</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/engineering/third-year/database-systems-ii/books/fundamentals-of-database-systems/chapter-2.textbundle/text/" class="active">
+      Text</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/engineering/third-year/database-systems-ii/intro.textbundle/text/" class="">
+      Text</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header hidden">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/icons/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Text</h3>
+
+  <label for="toc-control">
+    
+    <img src="/icons/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#chapter-2">Chapter 2</a>
+      <ul>
+        <li><a href="#categories-of-data-models">Categories of Data Models</a></li>
+        <li><a href="#schemas-instances-and-database-state">Schemas, Instances, and Database State</a></li>
+        <li><a href="#three-schema-architecture-and-data-independence">Three-Schema Architecture and Data Independence</a></li>
+        <li><a href="#data-independence">Data Independence</a></li>
+        <li><a href="#database-languages-and-interfaces">Database Languages and Interfaces</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h2 id="chapter-2">Chapter 2<a class="anchor" href="#chapter-2">#</a></h2>
+<h3 id="categories-of-data-models">Categories of Data Models<a class="anchor" href="#categories-of-data-models">#</a></h3>
+<p>An <strong>entity</strong> represents a real-world object or concept, such as an employee  or a project from the mini world that is described in the database.</p>
+<p>An <strong>attribute</strong> represents some property of interest that further describes an entity, such as the employee&rsquo;s name or salary.</p>
+<p>A <strong>relationship</strong> among two or more entities represents an association among the entities, for example, a works-on relationship between an employee and a project.</p>
+<h3 id="schemas-instances-and-database-state">Schemas, Instances, and Database State<a class="anchor" href="#schemas-instances-and-database-state">#</a></h3>
+<p>In a data model, it is important to distinguish between the description of the database and the database in itself. The description of the database is called the <strong>database schema</strong>.
+The actual data in a database may change quite frequently. The data in the database at a particular moment in time is called <strong>database state</strong> or <strong>snapshot</strong>.</p>
+<h3 id="three-schema-architecture-and-data-independence">Three-Schema Architecture and Data Independence<a class="anchor" href="#three-schema-architecture-and-data-independence">#</a></h3>
+<h4 id="the-three-schema-architecture">The Three-Schema Architecture<a class="anchor" href="#the-three-schema-architecture">#</a></h4>
+<p>The goal of the three-schema architecture, illustrated in Figure 2.2, is the separate the user applications from the physical database. In this architecture, skimmer can be defined at the following three levels:</p>
+<ol>
+<li>The internal level has an internal schema, which describes the physical storage structure of the database.</li>
+<li>The conceptual level has a conceptual schema, which describes the structure of the whole database for a community of users.</li>
+<li>The external or view level includes a number of external schemas or user views.</li>
+</ol>
+<h3 id="data-independence">Data Independence<a class="anchor" href="#data-independence">#</a></h3>
+<p>We can define two types of data independence:</p>
+<ol>
+<li>Logical data independence is the capacity to change the conceptual schema without having to change external scheme mask or application programs.</li>
+<li>Physical data independence is the capacity to change the internal schema without having to change the conceptual schema.</li>
+</ol>
+<h3 id="database-languages-and-interfaces">Database Languages and Interfaces<a class="anchor" href="#database-languages-and-interfaces">#</a></h3>
+<h4 id="dbms-languages">DBMS Languages<a class="anchor" href="#dbms-languages">#</a></h4>
+<ul>
+<li>data definition language</li>
+<li>storage definition language (SDL)</li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+<div>
+
+</div>
+
+<div>
+
+</div>
+
+</div>
+
+
+
+
+
+  
+  
+  
+  <div class="flex flex-wrap justify-between">
+    <span>
+    
+      <a href="/docs/engineering/third-year/database-systems-ii/books/fundamentals-of-database-systems/chapter-1/chapter-1.textbundle/text/" class="flex align-center">
+        <img src="/icons/backward.svg" class="book-icon" alt="Backward" />
+        <span>Text</span>
+      </a>
+    
+    </span>
+    <span>
+    
+      <a href="/docs/engineering/third-year/database-systems-ii/intro.textbundle/text/" class="flex align-center">
+        <span>Text</span>
+        <img src="/icons/forward.svg" class="book-icon" alt="Forward" />
+      </a>
+    
+    </span>
+  </div>
+  
+
+
+ 
+        
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+        
+        
+  
+ 
+        
+  
+  
+    <script>(function(){document.querySelectorAll("pre:has(code)").forEach(e=>{e.addEventListener("click",e.focus),e.addEventListener("copy",function(t){if(t.preventDefault(),navigator.clipboard){const t=window.getSelection().toString()||e.textContent;navigator.clipboard.writeText(t)}})})})()</script>
+  
+
+      </footer>
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  
+  <aside class="book-toc">
+    <div class="book-toc-content">
+      
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#chapter-2">Chapter 2</a>
+      <ul>
+        <li><a href="#categories-of-data-models">Categories of Data Models</a></li>
+        <li><a href="#schemas-instances-and-database-state">Schemas, Instances, and Database State</a></li>
+        <li><a href="#three-schema-architecture-and-data-independence">Three-Schema Architecture and Data Independence</a></li>
+        <li><a href="#data-independence">Data Independence</a></li>
+        <li><a href="#database-languages-and-interfaces">Database Languages and Interfaces</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+    </div>
+  </aside>
+  
+ 
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
