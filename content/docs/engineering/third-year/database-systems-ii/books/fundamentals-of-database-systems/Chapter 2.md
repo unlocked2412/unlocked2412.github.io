@@ -56,3 +56,6 @@ We distinguished the schema, or description of a database, from the database its
 - External schemas describe the views of different user groups.
 
 
+Wat !
+
+![Wat is this !](/docs/engineering/third-year/database-systems-ii/books/fundamentals-of-database-systems/assets/wat.jpg)
