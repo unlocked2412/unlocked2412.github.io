@@ -17,7 +17,7 @@ The actual data in a database may change quite frequently. The data in the datab
 
 #### The Three-Schema Architecture
 
-The goal of the three-schema architecture, illustrated in Figure 2.2, is the separate the user applications from the physical database. In this architecture, skimmer can be defined at the following three levels:
+The goal of the three-schema architecture, illustrated in Figure 2.2, is the separate the user applications from the physical database. In this architecture, schemas can be defined at the following three levels:
 1. The internal level has an internal schema, which describes the physical storage structure of the database.
 2. The conceptual level has a conceptual schema, which describes the structure of the whole database for a community of users.
 3. The external or view level includes a number of external schemas or user views.
@@ -54,6 +54,3 @@ We distinguished the schema, or description of a database, from the database its
 - An internal schema describes the physical storage structure of the database.
 - A conceptual schema is a high-level description of the whole database.
 - External schemas describe the views of different user groups.
-
-
-Wat !
