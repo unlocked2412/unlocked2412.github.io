@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Database Systems II on The Engineer&#39;s Lair</title>
-    <link>http://localhost:50384/docs/engineering/third-year/database-systems-ii/</link>
+    <link>http://localhost:1313/docs/engineering/third-year/database-systems-ii/</link>
     <description>Recent content in Database Systems II on The Engineer&#39;s Lair</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="http://localhost:50384/docs/engineering/third-year/database-systems-ii/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/docs/engineering/third-year/database-systems-ii/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>http://localhost:50384/docs/engineering/third-year/database-systems-ii/intro/</link>
+      <link>http://localhost:1313/docs/engineering/third-year/database-systems-ii/intro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:50384/docs/engineering/third-year/database-systems-ii/intro/</guid>
+      <guid>http://localhost:1313/docs/engineering/third-year/database-systems-ii/intro/</guid>
       <description>&lt;h2 id=&#34;intro&#34;&gt;intro&lt;a class=&#34;anchor&#34; href=&#34;#intro&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;title-introduction&#34;&gt;title: &amp;ldquo;Introduction&amp;rdquo;&lt;a class=&#34;anchor&#34; href=&#34;#title-introduction&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;This is your Database Systems II section.&lt;/p&gt;&#xA;&lt;p&gt;Inline math: $a^2 + b^2 = c^2$&lt;/p&gt;&#xA;$$\sum_{i=1}^{n} i = \frac{n(n+1)}{2}$$</description>
     </item>
   </channel>
