@@ -17,3 +17,17 @@ An **entity** is a _thing_ or _object_ in the real world with an independent exi
 ##### Composive versus Simple (Atomic) Attributes.
 
 **Composite attributes** can be divided
+
+##### Single-Valued versus Multivalued Attributes
+
+##### Stored versus Derived Attributes
+
+##### NULL Values
+##### Complex Attributes
+
+#### Entity Types, Entity Sets, Keys, and Value Sets
+##### Entity Types and Entity Sets
+
+##### Key Attributes of an Entity Type
+
+##### Value Sets (Domains) of Attributes

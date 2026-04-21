@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Método Simplex# Algoritmo Simplex
+Estandarizar Pasar a forma estándar: restricciones con =, agregar holguras u_i, x \ge 0._ Construir tableau inicial Base inicial: variables de holgura. Fila z con coeficientes negativos. Elegir variable entrante Columna con el coeficiente más negativo en la fila z. Test de razón mínima (sobre la columna entrante) Sea j la columna entrante. Para cada fila i, calcular: $\frac{b\_i}{a_{ij}} \quad \text{solo si } a_{ij} &gt; 0$ Elegir la menor razón positiva → variable saliente. Pivotear Normalizar la fila pivote (hacer pivote = 1). Anular el resto de la columna (eliminación tipo Gauss). Iterar Repetir desde el paso 3. Condición de parada Si no hay coeficientes negativos en la fila z → óptimo. Si en el paso 4 no hay a_${ij} &gt; 0$ → problema no acotado._ Lectura de la solución
+">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2e3440">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/engineering/third-year/operations-research/concepts/m%C3%A9todo-simplex/">
+  <meta property="og:site_name" content="The Engineer&#39;s Lair">
+  <meta property="og:title" content="The Engineer&#39;s Lair">
+  <meta property="og:description" content="Método Simplex# Algoritmo Simplex
+Estandarizar Pasar a forma estándar: restricciones con =, agregar holguras u_i, x \ge 0._ Construir tableau inicial Base inicial: variables de holgura. Fila z con coeficientes negativos. Elegir variable entrante Columna con el coeficiente más negativo en la fila z. Test de razón mínima (sobre la columna entrante) Sea j la columna entrante. Para cada fila i, calcular: $\frac{b\_i}{a_{ij}} \quad \text{solo si } a_{ij} &gt; 0$ Elegir la menor razón positiva → variable saliente. Pivotear Normalizar la fila pivote (hacer pivote = 1). Anular el resto de la columna (eliminación tipo Gauss). Iterar Repetir desde el paso 3. Condición de parada Si no hay coeficientes negativos en la fila z → óptimo. Si en el paso 4 no hay a_${ij} &gt; 0$ → problema no acotado._ Lectura de la solución">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+
+
+  <meta itemprop="name" content="The Engineer&#39;s Lair">
+  <meta itemprop="description" content="Método Simplex# Algoritmo Simplex
+Estandarizar Pasar a forma estándar: restricciones con =, agregar holguras u_i, x \ge 0._ Construir tableau inicial Base inicial: variables de holgura. Fila z con coeficientes negativos. Elegir variable entrante Columna con el coeficiente más negativo en la fila z. Test de razón mínima (sobre la columna entrante) Sea j la columna entrante. Para cada fila i, calcular: $\frac{b\_i}{a_{ij}} \quad \text{solo si } a_{ij} &gt; 0$ Elegir la menor razón positiva → variable saliente. Pivotear Normalizar la fila pivote (hacer pivote = 1). Anular el resto de la columna (eliminación tipo Gauss). Iterar Repetir desde el paso 3. Condición de parada Si no hay coeficientes negativos en la fila z → óptimo. Si en el paso 4 no hay a_${ij} &gt; 0$ → problema no acotado._ Lectura de la solución">
+  <meta itemprop="wordCount" content="174">
+
+<title>Método Simplex | The Engineer&#39;s Lair</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/docs/engineering/third-year/operations-research/concepts/m%C3%A9todo-simplex/">
+<link rel="stylesheet" href="/book.min.4d6d5ad3b0ae85d2a15b20ab217863f70db543e46314629e239ced759e674898.css" integrity="sha256-TW1a07CuhdKhWyCrIXhj9w21Q&#43;RjFGKeI5ztdZ5nSJg=" crossorigin="anonymous">
+
+
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.4dc26b4eb31dd3f75cce6843fb2728569724cf49589e9b3cabf5a42fbb8f8ab7.js" integrity="sha256-TcJrTrMd0/dczmhD&#43;ycoVpckz0lYnps8q/WkL7uPirc=" crossorigin="anonymous"></script>
+
+
+
+  <script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$']],
+    displayMath: [['$$', '$$']],
+    packages: {'[+]': ['ams']}
+  }
+};
+</script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body dir="ltr" class="book-kind-page book-type-docs">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>The Engineer&#39;s Lair</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input id="book-search-input" type="text" 
+    placeholder="Search"
+    aria-label="Search"
+    maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a>
+      Database Systems II</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/engineering/third-year/database-systems-ii/books/fundamentals-of-database-systems/" class="">
+      Fundamentals of Database Systems</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/engineering/third-year/database-systems-ii/books/fundamentals-of-database-systems/chapter-1/" class="">
+      Chapter 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/engineering/third-year/database-systems-ii/books/fundamentals-of-database-systems/chapter-2/" class="">
+      Chapter 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/engineering/third-year/database-systems-ii/books/fundamentals-of-database-systems/chapter-3/" class="">
+      Chapter 3</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/engineering/third-year/database-systems-ii/books/fundamentals-of-database-systems/chapter-4/" class="">
+      Chapter 4</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/engineering/third-year/database-systems-ii/books/fundamentals-of-database-systems/chapter-5/" class="">
+      Chapter 5</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/engineering/third-year/database-systems-ii/books/fundamentals-of-database-systems/summary/" class="">
+      Summary</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/engineering/third-year/database-systems-ii/intro/" class="">
+      Intro</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/engineering/third-year/ethics-and-informatics-legislation/march-17-2026/" class="">
+      March 17, 2026</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/engineering/third-year/ethics-and-informatics-legislation/march-31-2026/" class="">
+      March 31, 2026</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a>
+      Operations Research</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/engineering/third-year/operations-research/april-14-2026/" class="">
+      April 14, 2026</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/engineering/third-year/operations-research/concepts/m%C3%A9todo-simplex/" class="active">
+      Método Simplex</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/engineering/third-year/operations-research/march-20-2026/" class="">
+      March 20, 2026</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/engineering/third-year/operations-research/march-27-2026/" class="">
+      March 27, 2026</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/engineering/third-year/operations-research/march-31-2026/" class="">
+      March 31, 2026</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header hidden">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/icons/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Método Simplex</h3>
+
+  <label for="toc-control">
+    
+  </label>
+</div>
+
+
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="método-simplex">Método Simplex<a class="anchor" href="#m%c3%a9todo-simplex">#</a></h1>
+<p>Algoritmo Simplex</p>
+<ol>
+<li>Estandarizar
+<ul>
+<li>Pasar a forma estándar: restricciones con =, agregar holguras u_i, x \ge 0._</li>
+</ul>
+</li>
+<li>Construir tableau inicial
+<ul>
+<li>Base inicial: variables de holgura.</li>
+<li>Fila z con coeficientes negativos.</li>
+</ul>
+</li>
+<li>Elegir variable entrante
+<ul>
+<li>Columna con el coeficiente más negativo en la fila z.</li>
+</ul>
+</li>
+<li>Test de razón mínima (sobre la columna entrante)
+<ul>
+<li>Sea j la columna entrante.</li>
+<li>Para cada fila i, calcular: $\frac{b\_i}{a_{ij}} \quad \text{solo si } a_{ij} > 0$</li>
+<li>Elegir la menor razón positiva → variable saliente.</li>
+</ul>
+</li>
+<li>Pivotear
+<ul>
+<li>Normalizar la fila pivote (hacer pivote = 1).</li>
+<li>Anular el resto de la columna (eliminación tipo Gauss).</li>
+</ul>
+</li>
+<li>Iterar
+Repetir desde el paso 3.</li>
+<li>Condición de parada
+<ul>
+<li>Si no hay coeficientes negativos en la fila z → óptimo.</li>
+<li>Si en el paso 4 no hay a_${ij} > 0$ → problema no acotado._</li>
+</ul>
+</li>
+</ol>
+<p>Lectura de la solución</p>
+<pre tabindex="0"><code>•	Variables básicas = RHS
+•	Variables no básicas = 0
+•	Valor óptimo = RHS de z</code></pre><p>Idea clave</p>
+<p>El ratio test se hace únicamente sobre la columna de la variable entrante, porque mide cuánto podés aumentarla sin violar factibilidad.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+<div>
+
+</div>
+
+<div>
+
+</div>
+
+</div>
+
+
+
+
+
+  
+  
+  
+  <div class="flex flex-wrap justify-between">
+    <span>
+    
+      <a href="/docs/engineering/third-year/operations-research/april-14-2026/" class="flex align-center">
+        <img src="/icons/backward.svg" class="book-icon" alt="Backward" />
+        <span>April 14, 2026</span>
+      </a>
+    
+    </span>
+    <span>
+    
+      <a href="/docs/engineering/third-year/operations-research/march-20-2026/" class="flex align-center">
+        <span>March 20, 2026</span>
+        <img src="/icons/forward.svg" class="book-icon" alt="Forward" />
+      </a>
+    
+    </span>
+  </div>
+  
+
+
+ 
+        
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+        
+        
+  
+ 
+        
+  
+  
+    <script>(function(){document.querySelectorAll("pre:has(code)").forEach(e=>{e.addEventListener("click",e.focus),e.addEventListener("copy",function(t){if(t.preventDefault(),navigator.clipboard){const t=window.getSelection().toString()||e.textContent;navigator.clipboard.writeText(t)}})})})()</script>
+  
+
+      </footer>
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  
+ 
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

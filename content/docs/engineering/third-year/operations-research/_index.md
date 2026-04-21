@@ -1,3 +1,3 @@
 ---
-title: "Investigación Operativa"
+title: "Operations Research"
 ---

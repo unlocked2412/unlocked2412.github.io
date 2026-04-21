@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="March 20, 2026# La programación lineal pretende hacer mínima o máxima una determinada función.
+z = función objetivo
+Ejercicio 1
+Una empresa fabrica dos tipos de productos (A y B), para los que dispone de una persona que trabaja ocho horas y un total de nueve kilos de materia prima.
+Para obtener más beneficio, sabiendo que el beneficio de A es 2 y el de B es 3, y además se conocen las horas y los kilos que ambas producciones utilizan.
+">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2e3440">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/engineering/third-year/operations-research/march-20-2026/">
+  <meta property="og:site_name" content="The Engineer&#39;s Lair">
+  <meta property="og:title" content="The Engineer&#39;s Lair">
+  <meta property="og:description" content="March 20, 2026# La programación lineal pretende hacer mínima o máxima una determinada función.
+z = función objetivo
+Ejercicio 1
+Una empresa fabrica dos tipos de productos (A y B), para los que dispone de una persona que trabaja ocho horas y un total de nueve kilos de materia prima.
+Para obtener más beneficio, sabiendo que el beneficio de A es 2 y el de B es 3, y además se conocen las horas y los kilos que ambas producciones utilizan.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+
+
+  <meta itemprop="name" content="The Engineer&#39;s Lair">
+  <meta itemprop="description" content="March 20, 2026# La programación lineal pretende hacer mínima o máxima una determinada función.
+z = función objetivo
+Ejercicio 1
+Una empresa fabrica dos tipos de productos (A y B), para los que dispone de una persona que trabaja ocho horas y un total de nueve kilos de materia prima.
+Para obtener más beneficio, sabiendo que el beneficio de A es 2 y el de B es 3, y además se conocen las horas y los kilos que ambas producciones utilizan.">
+  <meta itemprop="wordCount" content="382">
+
+<title>March 20, 2026 | The Engineer&#39;s Lair</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/docs/engineering/third-year/operations-research/march-20-2026/">
+<link rel="stylesheet" href="/book.min.4d6d5ad3b0ae85d2a15b20ab217863f70db543e46314629e239ced759e674898.css" integrity="sha256-TW1a07CuhdKhWyCrIXhj9w21Q&#43;RjFGKeI5ztdZ5nSJg=" crossorigin="anonymous">
+
+
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.4dc26b4eb31dd3f75cce6843fb2728569724cf49589e9b3cabf5a42fbb8f8ab7.js" integrity="sha256-TcJrTrMd0/dczmhD&#43;ycoVpckz0lYnps8q/WkL7uPirc=" crossorigin="anonymous"></script>
+
+
+
+  <script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$']],
+    displayMath: [['$$', '$$']],
+    packages: {'[+]': ['ams']}
+  }
+};
+</script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body dir="ltr" class="book-kind-page book-type-docs">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>The Engineer&#39;s Lair</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input id="book-search-input" type="text" 
+    placeholder="Search"
+    aria-label="Search"
+    maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a>
+      Database Systems II</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/engineering/third-year/database-systems-ii/books/fundamentals-of-database-systems/" class="">
+      Fundamentals of Database Systems</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/engineering/third-year/database-systems-ii/books/fundamentals-of-database-systems/chapter-1/" class="">
+      Chapter 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/engineering/third-year/database-systems-ii/books/fundamentals-of-database-systems/chapter-2/" class="">
+      Chapter 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/engineering/third-year/database-systems-ii/books/fundamentals-of-database-systems/chapter-3/" class="">
+      Chapter 3</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/engineering/third-year/database-systems-ii/books/fundamentals-of-database-systems/chapter-4/" class="">
+      Chapter 4</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/engineering/third-year/database-systems-ii/books/fundamentals-of-database-systems/chapter-5/" class="">
+      Chapter 5</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/engineering/third-year/database-systems-ii/books/fundamentals-of-database-systems/summary/" class="">
+      Summary</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/engineering/third-year/database-systems-ii/intro/" class="">
+      Intro</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/engineering/third-year/ethics-and-informatics-legislation/march-17-2026/" class="">
+      March 17, 2026</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/engineering/third-year/ethics-and-informatics-legislation/march-31-2026/" class="">
+      March 31, 2026</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a>
+      Operations Research</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/engineering/third-year/operations-research/april-14-2026/" class="">
+      April 14, 2026</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/engineering/third-year/operations-research/concepts/m%C3%A9todo-simplex/" class="">
+      Método Simplex</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/engineering/third-year/operations-research/march-20-2026/" class="active">
+      March 20, 2026</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/engineering/third-year/operations-research/march-27-2026/" class="">
+      March 27, 2026</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/engineering/third-year/operations-research/march-31-2026/" class="">
+      March 31, 2026</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header hidden">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/icons/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>March 20, 2026</h3>
+
+  <label for="toc-control">
+    
+  </label>
+</div>
+
+
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="march-20-2026">March 20, 2026<a class="anchor" href="#march-20-2026">#</a></h1>
+<p>La programación lineal pretende hacer mínima o máxima una determinada función.</p>
+<blockquote class='book-hint '>
+<p>z = función objetivo</p>
+</blockquote><p><strong>Ejercicio 1</strong></p>
+<blockquote class='book-hint '>
+<p>Una empresa fabrica dos tipos de productos (A y B), para los que dispone de una persona que trabaja ocho horas y un total de nueve kilos de materia prima.</p>
+</blockquote><p>Para obtener más beneficio, sabiendo que el beneficio de A es 2 y el de B es 3, y además se conocen las horas y los kilos que ambas producciones utilizan.</p>
+$$\begin{aligned}
+x_1 &:= \text{cantidad de unidades de producción A} \\
+x_2 &:= \text{cantidad de unidades de producción B}
+\end{aligned}$$<p>Modelo:</p>
+$$\begin{aligned}
+\max\; z &= 2x_1 + 3x_2 \\
+1x_1 + 2x_2 &\leq 8 \,\text{(Horas)} \\
+3x_1 + 2x_2 &\leq 9 \,\text{(Kilos)} \\  x_1; x_2 \leq 0
+\end{aligned}$$<p>Resolver sistema de ecuaciones
+$$\begin{aligned}
+1x_1 + 2x_2 &amp;= 8 \implies x_2 = 1/2(8 - x_1) \
+3x_1 + 2x_2 &amp;= 9 \implies x_1 = 2 \</p>
+<p>x_2 &amp;= 3 \ \end{aligned}$$</p>
+<p>Sustituir en la función objetivo</p>
+$$z = 2(2) + 3(3) = 13$$<p><strong>Ejercicio 2</strong></p>
+<p>Un agricultor desea abonar un campo y sabe que precisa como mínimo 17 kilos de fósforo y ocho kilos de nitrógeno.</p>
+<p>La tienda especializada especializada donde, disponen de dos productos:
+A contiene 20 % de fósforo y 30 % de nitrógeno y cuesta 300 pesos el kilo. B contiene 30 % de fósforo y 10 % de nitrógeno y cuesta 300 pesos el kilo.
+Qué cantidad debe comprar de cada producto para que el gasto sea mínimo?</p>
+$$\min z = 300 x_1 + 300x_2$$<p>
+Restricciones:
+</p>
+$$0.2x_1 + 0.3 x_2 \geq 17\, \text{(fósforo)} \\
+0.3x_1 + 0.1x_2 \geq 8 \,\text{(nitrógeno)}$$<p>Solución analítica:
+Hallar $x_1, x_2$:</p>
+<p>$0.2x\_1 + 0.3 x\_2 = 17 \implies
+x\_1 = \frac{17-0.3x\_2}{0.2}$<br>
+Reemplazar en la segunda ecuación:</p>
+$$0.3(\frac{17-0.3x_2}{0.2}) + 0.1x_2 = 8 \implies x_2 = 50$$<p>
+Finalmente,</p>
+$$\min z = 300 x_1 + 300x_2 = 18000$$<p>Solución gráfica:</p>
+<p>Despejamos $x_2$ en ambas ecuaciones:
+</p>
+$$x_2 = \frac{170 - 2x_1}{3}, \quad x_2 = 80 - 3x_1$$<p>
+Encontrar intersección entre las rectas, y sombrear la sección superior.</p>
+<p><strong>Ejercicio 3</strong></p>
+<p>Minimizar z igual a $5x_1+4x_2$</p>
+<p>Restricciones:</p>
+<p>$2x\_1+3x\_2 \geq 30 \\
+3x\_1+2x\_2 \geq 40$</p>
+<p>Solución:</p>
+<p>$2x_1+3x_2 = 30 \
+3x_1+2x_2 = 40 \<br>
+\iff x_2 = 2 \</p>
+<p>2x_1 + 3(2) = 30 \implies x_1 = 12$</p>
+<p>Reemplazo en función z:</p>
+$$z = 5(12)+4(2) = 68$$</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+<div>
+
+</div>
+
+<div>
+
+</div>
+
+</div>
+
+
+
+
+
+  
+  
+  
+  <div class="flex flex-wrap justify-between">
+    <span>
+    
+      <a href="/docs/engineering/third-year/operations-research/concepts/m%C3%A9todo-simplex/" class="flex align-center">
+        <img src="/icons/backward.svg" class="book-icon" alt="Backward" />
+        <span>Método Simplex</span>
+      </a>
+    
+    </span>
+    <span>
+    
+      <a href="/docs/engineering/third-year/operations-research/march-27-2026/" class="flex align-center">
+        <span>March 27, 2026</span>
+        <img src="/icons/forward.svg" class="book-icon" alt="Forward" />
+      </a>
+    
+    </span>
+  </div>
+  
+
+
+ 
+        
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+        
+        
+  
+ 
+        
+  
+  
+    <script>(function(){document.querySelectorAll("pre:has(code)").forEach(e=>{e.addEventListener("click",e.focus),e.addEventListener("copy",function(t){if(t.preventDefault(),navigator.clipboard){const t=window.getSelection().toString()||e.textContent;navigator.clipboard.writeText(t)}})})})()</script>
+  
+
+      </footer>
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  
+ 
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
